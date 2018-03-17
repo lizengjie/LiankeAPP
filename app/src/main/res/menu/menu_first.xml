@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/aboutUs"
+          android:title="关于连科"/>
+    <item android:id="@+id/joinUs"
+          android:title="加入连科"/>
+
+</menu>
