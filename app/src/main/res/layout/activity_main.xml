@@ -7,6 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.madeinlk.MainActivity"
-    android:background="@drawable/bk_main">
+    android:background="@drawable/bk_lk">
 
 </LinearLayout>
