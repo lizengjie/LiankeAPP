@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Firstpage">
+        <activity android:name=".Firstpage"
+            android:label="Welcome to Lianke">
             <intent-filter>
                 <action android:name="firstpage"/>
-
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -27,17 +27,25 @@
         </activity>
         <activity android:name=".firstmenu.JoinusActivity">
         </activity>
-        <activity android:name=".Jobs.jijiagong"
+        <activity
+            android:name=".Jobs.jijiagong"
             android:label="机加工中心招聘岗位">
         </activity>
-        <activity android:name=".Jobs.zhusu"
+        <activity
+            android:name=".Jobs.zhusu"
             android:label="注塑事业部招聘岗位">
         </activity>
-        <activity android:name=".Jobs.xvmu"
+        <activity
+            android:name=".Jobs.xvmu"
             android:label="畜牧事业部招聘岗位">
         </activity>
-        <activity android:name=".Jobs.zidonghua"
+        <activity
+            android:name=".Jobs.zidonghua"
             android:label="自动化事业部招聘岗位">
+        </activity>
+        <activity android:name=".xvmu.MainActivity">
+        </activity>
+        <activity android:name=".xvmu.Controlselect">
         </activity>
     </application>
 

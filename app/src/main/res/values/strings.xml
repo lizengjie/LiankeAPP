@@ -6,6 +6,8 @@
      \n\t\t\t公司配套智能研发中心，自动化设备事业部、畜牧养殖设备事业部、注塑事业部及机床加工中心，集肉制品等食品行业自动化设备、畜牧设备和注塑产品的研发、生产、销售、服务于一体。</string>
     <string name="Url">www.madeinlk.com</string>
     <string name="joinus">招贤纳士，诚聘英才</string>
+    <string name="rights">©2018 Lianke Technology. All rights reserved.</string>
+
     <string name="jijiagong">岗位：车床工\n1）有车床工作经验\n2）身体健康，对工作认真负责
 \n\n试用期30天，工资2500元。
 \n转正后执行计件工资制，工资4000-5500元/月。
@@ -23,7 +25,7 @@
 \n【邮箱】zhaopin@liankai.com
 
 \n\n报名电话：0539-7202985 15666991873 范经理</string>
-<string name="zhusu">
+    <string name="zhusu">
     岗位一：长白班，转正后工资3000-3300元/月
 \n岗位二：三班制，转正后工资3600-3800元/月
 \n岗位三：二班制，转正后工资3800-4800元/月
@@ -45,7 +47,7 @@
 
 \n\n报名电话：0539-7202985 15666991873 范经理
 </string>
-<string name="xvmu">岗位一：焊工
+    <string name="xvmu">岗位一：焊工
 \n1）根据焊接工艺指导书、图纸进行焊接工作；
 \n2）要求有二氧化碳保护焊或氩弧焊工作经验；
 
