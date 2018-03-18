@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.madeinlk.firstmenu.JoinusActivity">
+<TextView
+    android:id="@+id/joinus_TV1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/joinus"
+    android:textSize="20sp"
+    android:textColor="#fd4908"
+    android:gravity="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/joinus_IM1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/joinus_TV1"
+        android:src="@drawable/joinus_title"/>
+    <Button
+        android:layout_below="@id/joinus_IM1"
+        android:id="@+id/joinus_btn1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="机加工中心招聘岗位"/>
+    <Button
+        android:layout_below="@id/joinus_btn1"
+        android:id="@+id/joinus_btn2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="注塑事业部招聘岗位"/>
+    <Button
+        android:layout_below="@id/joinus_btn2"
+        android:id="@+id/joinus_btn3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="畜牧事业部招聘岗位"/>
+    <Button
+        android:layout_below="@id/joinus_btn3"
+        android:id="@+id/joinus_btn4"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="自动化事业部招聘岗位"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.madeinlk.firstmenu.AboutusActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/aboutus_TV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/com_name"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawablePadding="50dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/aboutus_TV2"
+        android:layout_below="@id/aboutus_TV1"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="20dp"
+        android:textColor="#f7b40a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label"
+        />
+    <TextView
+        android:id="@+id/aboutus_TV3"
+        android:layout_below="@id/aboutus_TV2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro"/>
+    <ImageView
+        android:id="@+id/aboutus_IM1"
+        android:layout_below="@id/aboutus_TV3"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/door_page"/>
+    <TextView
+        android:layout_below="@id/aboutus_IM1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Url"
+        android:autoLink="web"
+        android:gravity="center"
+        android:layout_marginTop="120dp"/>
+</RelativeLayout>

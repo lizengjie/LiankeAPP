@@ -27,6 +27,18 @@
         </activity>
         <activity android:name=".firstmenu.JoinusActivity">
         </activity>
+        <activity android:name=".Jobs.jijiagong"
+            android:label="机加工中心招聘岗位">
+        </activity>
+        <activity android:name=".Jobs.zhusu"
+            android:label="注塑事业部招聘岗位">
+        </activity>
+        <activity android:name=".Jobs.xvmu"
+            android:label="畜牧事业部招聘岗位">
+        </activity>
+        <activity android:name=".Jobs.zidonghua"
+            android:label="自动化事业部招聘岗位">
+        </activity>
     </application>
 
 </manifest>
