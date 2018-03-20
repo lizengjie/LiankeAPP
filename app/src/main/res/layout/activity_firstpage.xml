@@ -1,100 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <ImageView
-         android:layout_width="match_parent"
-         android:layout_height="120dp"
-         android:id="@+id/firstpage_recycle1"
-         android:background="#e7b613"
-         android:padding="2dp"/>
-    <ImageView
-        android:layout_below="@id/firstpage_recycle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#cee4de"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/firstpage_recycle1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片标题"
+                android:textColor="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal"
+                >
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_focused"
+                    />
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal"
+                    />
+
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal"
+                    />
+
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal"
+                    />
+
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
         android:id="@+id/firstpage_IV1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/work_info"
-        android:layout_marginTop="5dp"/>
-    <ImageView
-        android:layout_below="@id/firstpage_IV1"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_below="@id/firstpage_recycle1"
         android:layout_marginTop="5dp"
-        android:id="@+id/firstpage_recycle2"
-        android:background="#e7b613"
-        android:padding="2dp"/>
-    <ImageView
+        android:text="新闻要点"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <com.madeinlk.MarqueeTextView
+        android:id="@+id/marqueeTv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/firstpage_IV1"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
         android:id="@+id/orgi1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/orgnization"
-        android:layout_below="@id/firstpage_recycle2"
-        android:layout_marginTop="5dp"/>
+        android:layout_below="@id/marqueeTv"
+        android:layout_marginTop="5dp"
+        android:text="组织机构"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
     <LinearLayout
         android:id="@+id/org2"
-        android:layout_below="@id/orgi1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_below="@id/orgi1"
         android:layout_marginTop="5dp"
+        android:orientation="horizontal"
         >
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="机加工"
             android:layout_marginLeft="50dp"
             android:background="@drawable/btn_pressed"
             android:drawableLeft="@drawable/jijiagong"
-            android:paddingLeft="5dp"/>
+            android:paddingLeft="5dp"
+            android:text="机加工"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="注塑"
             android:layout_marginLeft="80dp"
             android:background="@drawable/btn_pressed"
             android:drawableLeft="@drawable/zhusu"
-            android:paddingLeft="5dp"/>
+            android:paddingLeft="5dp"
+            android:text="注塑"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/org3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/org2"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         >
+
         <Button
+            android:id="@+id/Btn_xvmu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="畜牧"
             android:layout_marginLeft="50dp"
-            android:id="@+id/Btn_xvmu"
             android:background="@drawable/btn_pressed"
             android:drawableLeft="@drawable/xvmu"
-            android:paddingLeft="5dp"/>
+            android:paddingLeft="5dp"
+            android:text="畜牧"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="自动化"
             android:layout_marginLeft="80dp"
             android:background="@drawable/btn_pressed"
             android:drawableLeft="@drawable/zidonghua"
-            android:paddingLeft="5dp"/>
+            android:paddingLeft="5dp"
+            android:text="自动化"/>
     </LinearLayout>
-    <ImageView
-        android:layout_below="@id/org3"
-        android:id="@+id/shuoguo"
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/shuoguo"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@id/shuoguo"
-        android:background="#336655"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#cee4de"
     tools:context="com.madeinlk.xvmu.Controlselect">
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
         android:textSize="20sp"
         />
     <RadioGroup
+        android:id="@+id/rg1"
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -42,6 +44,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="启动连接"
+        android:text="确认设备"
+        android:id="@+id/con_select"
         android:background="@drawable/btn_pressed"/>
 </LinearLayout>
