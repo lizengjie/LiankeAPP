@@ -5,46 +5,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#cee4de"
+    android:orientation="vertical"
     tools:context="com.madeinlk.xvmu.Controlselect">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="选择连接设备类型"
+        android:layout_marginTop="10dp"
         android:gravity="center"
+        android:text="选择连接设备类型"
         android:textSize="20sp"
         />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <RadioGroup
         android:id="@+id/rg1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_weight="1">
+
         <RadioButton
             android:id="@+id/Radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="饲喂器"/>
+
         <RadioButton
             android:id="@+id/Radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="饲喂站"/>
+
         <RadioButton
             android:id="@+id/Radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="环控"/>
+
         <RadioButton
             android:id="@+id/Radio4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="料线"/>
     </RadioGroup>
-    <Button
+    <ImageView
+        android:id="@+id/control_select_IM1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/control_circle"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/control_circle"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="确认设备"
+        android:gravity="center"
+        android:text="设置设备ID"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/control_circle"/>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/control_circle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="设备ID："
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/dis_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/control_circle"/>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/control_circle"/>
+
+    <Button
         android:id="@+id/con_select"
-        android:background="@drawable/btn_pressed"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/btn_pressed"
+        android:text="确认设备"/>
 </LinearLayout>
