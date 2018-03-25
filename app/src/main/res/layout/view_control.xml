@@ -27,7 +27,7 @@
                 android:textColor="#ECCD72"/>
             <TextView
                 android:id="@+id/input_tv1"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:background="@drawable/control_circle"
@@ -35,6 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:text="设备 ID："
                 android:textColor="#ECCD72"/>
             <TextView
@@ -92,6 +93,8 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
             <TextView
@@ -102,6 +105,8 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
@@ -112,20 +117,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="下料总数"
+                android:text="目标体重"
                 android:textColor="#ECCD72"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="已下料数"
+                android:text="当前体重"
                 android:textColor="#ECCD72"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
         <LinearLayout
@@ -135,20 +146,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="下料总数"
+                android:text="采食总量"
                 android:textColor="#ECCD72"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="已下料数"
+                android:text="分娩日期"
                 android:textColor="#ECCD72"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
         <TextView
@@ -166,43 +183,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="通讯状态："
+                android:text="通讯状态"
                 android:textColor="#ECCD72"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="通讯效率："
+                android:text="通讯效率"
                 android:textColor="#ECCD72"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="下料总数"
-                android:textColor="#ECCD72"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="已下料数"
-                android:textColor="#ECCD72"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
         <LinearLayout
@@ -217,6 +217,8 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
             <TextView
@@ -227,6 +229,37 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下料总数"
+                android:textColor="#ECCD72"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/control_circle"
+                android:textColor="@color/colorAccent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已下料数"
+                android:textColor="#ECCD72"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/control_circle"
                 android:textColor="@color/colorAccent"/>
         </LinearLayout>
@@ -242,6 +275,9 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/control_circle"
             android:textColor="@color/colorAccent"/>
         <TextView
             android:layout_width="wrap_content"
@@ -251,8 +287,12 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/control_circle"
             android:textColor="@color/colorAccent"/>
-    </LinearLayout>        <LinearLayout
+    </LinearLayout>
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp">
@@ -360,19 +400,31 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             >
+
             <Button
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_pressed_alarm"
                 android:text="下料A"/>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_pressed_alarm"
                 android:layout_weight="1"
                 android:text="下料B"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_pressed_alarm"
                 android:layout_weight="1"
                 android:text="下水"/>
 
@@ -387,16 +439,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_pressed_alarm"
                 android:text="开门"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_pressed_alarm"
                 android:text="暂停"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_pressed"
                 android:text="恢复"/>
         </LinearLayout>
 
